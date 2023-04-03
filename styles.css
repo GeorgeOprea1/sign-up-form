@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.side-hero {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./bg-img.jpg);
+  background-size: cover;
+  color: azure;
+  width: 40vw;
+  position: relative;
+  font-size: clamp(0.5rem, 1.75rem, 2.5rem);
+  text-align: center;
+}
+.photo-credit {
+  position: absolute;
+  bottom: 0;
+  font-size: clamp(0.5rem, 1.2rem, 2.5rem);
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+  flex-grow: 2;
+  background-color: rgb(240, 240, 240);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 3rem 1rem 3rem 1rem;
+  font-size: clamp(0.5rem, 1.2rem, 2.5rem);
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+  width: 100%;
+}
+
+.input-section > p {
+  padding-left: 2rem;
+  font-style: italic;
+}
+
+#my-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 6rem;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 15rem;
+  margin-bottom: 15px;
+}
+p {
+  font-size: 1.5rem;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(224, 224, 224);
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+.submit-section {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 3rem 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.3rem;
+  font-size: 1.3rem;
+  background-color: #596d48;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: -1px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+
+a {
+  text-decoration: none;
+  color: #596d48;
+}
+
+@media screen and (max-width: 850px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .side-hero {
+    width: 100vw;
+    position: relative;
+    font-size: 1.2rem;
+  }
+
+  .photo-credit {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.5rem;
+  }
+
+  .form {
+    width: 100vw;
+  }
+
+  .input-section {
+    padding: 0;
+    text-align: center;
+  }
+
+  #my-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .submit-section {
+    width: 100vw;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .submit-section > p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    background-color: #596d48;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: -1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+  }
+}
